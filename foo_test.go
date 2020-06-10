@@ -3,7 +3,7 @@ package seed_test
 import (
 	"testing"
 
-	. "github.com/golang-templates/seed"
+	. "github.com/pellared/sampleapp"
 )
 
 func TestFoo(t *testing.T) {
