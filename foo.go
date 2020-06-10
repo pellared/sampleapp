@@ -1,7 +1,11 @@
-// Package seed has a dummy function covered by a unit test.
-package seed
+package main
 
-// Foo returns "Bar".
+import "fmt"
+
+func main() {
+	fmt.Println(Foo())
+}
+
 func Foo() string {
 	return "Bar"
 }
