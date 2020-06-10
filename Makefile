@@ -64,8 +64,8 @@ release: ## goreleaser --snapshot --skip-publish --rm-dist
 .PHONY: diff
 diff: ## git diff
 	$(call print-target)
-	git diff --exit-code
-	test -z "`git status --porcelain`"
+	#git diff --exit-code
+	test -z "`git status --porcelain`" || git status --porcelain && exit 1
 
 .PHONY: docker
 docker: ## run in golang container, example: make docker run="make all"
