@@ -1,10 +1,4 @@
-package main
-
-import "fmt"
-
-func main() {
-	fmt.Println(Foo())
-}
+package sampleapp
 
 func Foo() string {
 	return "Bar"
