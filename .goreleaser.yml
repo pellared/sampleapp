@@ -5,9 +5,9 @@ builds:
   goos:
     - darwin
     - linux
-    # - freebsd
-    # - openbsd
-    # - windows
+    - freebsd
+    - openbsd
+    - windows
 archives:
 - format_overrides:
       - goos: windows
