@@ -69,7 +69,7 @@ diff: ## git diff
 
 .PHONY: docker
 docker: ## run in golang container, example: make docker run="make all"
-	docker run --rm -v $(CURDIR):/app $(args) golang:1.14 sh -c "cd /app && $(run)"
+	docker run --rm -v $(CURDIR):/app $(args) golang:1.16 sh -c "cd /app && $(run)"
 
 .PHONY: help
 help:
